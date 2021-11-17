@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Score Counter</string>
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="initial_score">0</string>
+
+    // buttons Strings
+
+    <string name="desc_inc_home_score">Increase Home Score</string>
+    <string name="desc_inc_away_score">Increase Away Score</string>
+
+    <string name="desc_inc_home_scoretwo">Increase Home Score by two</string>
+    <string name="desc_inc_away_scoretwo">Increase Away Score by two</string>
+
+    <string name="desc_dec_home_score">Decrement Home Score</string>
+    <string name="desc_dec_away_score">Decrement Away Score</string>
+
+    <string name="desc_reset_score">Reset Score</string>
+
+    // Styles Strings
+    <string name="increase_by_one"> +1</string>
+    <string name="increase_by_two"> +2</string>
+    <string name="decrease_by_one"> -1</string>
+    <string name="reset_all"> Reset Score</string>
+
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AE4CCF"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#B983FF"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonClearScore">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewHome"
+                style="@style/text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textColor="#7B1FA2"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/textViewAway"
+                android:layout_width="0dp"
+                style="@style/text"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/away"
+                android:textColor="#7B1FA2"
+                android:textSize="35sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewHomeScore"
+                android:layout_width="200dp"
+                style="@style/text"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/initial_score"
+                android:textColor="#7B1FA2"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/textViewAwayScore"
+                android:layout_width="200dp"
+                style="@style/text"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/initial_score"
+                android:textColor="#7B1FA2"
+                android:textSize="35sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/imageButtonIncHome"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="incrementHomeScore"
+                android:text="@string/increase_by_one"
+                android:textColor="#EA80FC"
+                android:textSize="24sp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/imageButtonIncAway"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="incrementAwayScore"
+                android:text="@string/increase_by_one"
+                android:textColor="#EA80FC"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/imageButtonDecHome"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="decrementHomeScore"
+                android:text="@string/decrease_by_one"
+                android:textColor="#EA80FC"
+                android:textSize="24sp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/imageButtonDecAway"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="decrementAwayScore"
+                android:text="@string/decrease_by_one"
+                android:textColor="#EA80FC"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/imageButtonIncHomeTwo"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="incrementHomeScoretwo"
+                android:text="@string/increase_by_two"
+                android:textColor="#EA80FC"
+                android:textSize="24sp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/imageButtonIncAwayTwo"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:onClick="incrementAwayScoretwo"
+                android:text="@string/increase_by_two"
+                android:textColor="#EA80FC"
+                android:textSize="24sp"
+                tools:ignore="TextContrastCheck" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/imageButtonClearScore"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_margin="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle"
+        android:onClick="resetScore"
+        android:text="@string/reset_all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="#EA80FC"
+        app:layout_constraintVertical_bias="0.145"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
