@@ -5,6 +5,7 @@
     <string name="initial_score">0</string>
 
     // buttons Strings
+    //this strings are for the buttons and text views
 
     <string name="desc_inc_home_score">Increase Home Score</string>
     <string name="desc_inc_away_score">Increase Away Score</string>

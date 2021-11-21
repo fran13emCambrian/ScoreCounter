@@ -2,8 +2,12 @@ package com.example.scorecounter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +27,32 @@ class MainActivity : AppCompatActivity() {
         textViewHomeScore = findViewById(R.id.textViewHomeScore)
         textViewAwayScore = findViewById(R.id.textViewAwayScore)
     }
+
+    //Create Menu
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu,menu);
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+
+       val id = item.getItemId()
+// Click on toast
+      if (id== R.id.settings){
+            Toast.makeText(this,"Settings Clicked", Toast.LENGTH_LONG).show()
+            return true
+        }
+
+        if (id== R.id.info){
+            Toast.makeText(this,"Code by Francisco Escobar", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Course JAV 1001", Toast.LENGTH_SHORT).show()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+
 
     // functions to increment x1
     fun incrementHomeScore(view: View){
@@ -63,7 +93,7 @@ class MainActivity : AppCompatActivity() {
         val decrementedAwayScore = currentAwayScore.toInt().dec()
         textViewAwayScore.text = decrementedAwayScore.toString()
     }
-
+//function to dreset
     fun resetScore(view: View){
         textViewHomeScore.text = ZERO.toString()
         textViewAwayScore.text = ZERO.toString()
